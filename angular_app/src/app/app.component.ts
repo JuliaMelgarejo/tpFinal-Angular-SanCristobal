@@ -10,7 +10,7 @@ import { SearchBarComponent } from "./components/search-bar/search-bar.component
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, MovieListComponentComponent, SearchBarComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, MovieListComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

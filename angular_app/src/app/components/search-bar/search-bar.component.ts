@@ -11,11 +11,11 @@ import { FormsModule } from '@angular/forms';
 export class SearchBarComponent {
 searchTerm: string = '';
 
-  @Output() searchTermChange = new EventEmitter<string>(); // Evento para emitir el término
+  //@Output() searchTermChange = new EventEmitter<string>(); // Evento para emitir el término
 
   // Método para emitir el término en tiempo real
-  onSearchTermChange(): void {
+  /*onSearchTermChange(): void {
     this.searchTermChange.emit(this.searchTerm);
-  }
+  }*/
 
 }

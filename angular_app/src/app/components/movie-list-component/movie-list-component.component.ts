@@ -27,18 +27,19 @@ export class MovieListComponentComponent {
   ];
 
 
-  selectedMovie: Movie | null = null;
+  selectedMovie: string = " ";
 
   filteredMovies: Movie[] = [...this.movies];
 
   onSearchTermChange(searchTerm: string): void {
-    this.searchTerm = searchTerm; // Actualiza la variable searchTerm
+    this.searchTerm = searchTerm; 
     this.filteredMovies = this.movies.filter(movie =>
       movie.title.toLowerCase().includes(searchTerm.toLowerCase())
     );}
  
   onMovieSelected(movieTitle: string): void {
-    this.selectedMovie = this.movies.find(movie => movie.title === movieTitle) || null;
+    //this.selectedMovie = this.movies.find(movie => movie.title === movieTitle) || null;
+    this.selectedMovie = movieTitle;
   }
 
 }
