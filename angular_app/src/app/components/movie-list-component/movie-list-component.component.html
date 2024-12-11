@@ -1,16 +1,13 @@
-<div class="movie-list">
+<div class="movies-list">
   <app-search-bar></app-search-bar>
-  <h2>peli seleccionada: {{ selectedMovie }}</h2>
+  <h2>Película seleccionada: {{ selectedMovie }}</h2>
 
   <div *ngIf="filteredMovies.length > 0">
-    
-    <div *ngFor="let movie of filteredMovies" class="movie-card">
+    <div *ngFor="let movie of movies" class="movie-card">
       <app-movie-item-component [movie]="movie" (movieSelected)="onMovieSelected($event)">
       </app-movie-item-component>
-    </div>
-    
   </div>
-<h2>peli seleccionada: {{ selectedMovie }}</h2>
+
   <div *ngIf="filteredMovies.length === 0" class="no-results">
     No se encontraron películas para "{{ searchTerm }}".
   </div>

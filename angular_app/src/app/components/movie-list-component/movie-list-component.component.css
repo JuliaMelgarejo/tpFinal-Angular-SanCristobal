@@ -6,5 +6,36 @@
 }
 
 .movie-card {
+  background-color: #ffffff;
+  /* Fondo blanco para cada caja */
+  border: 1px solid #ddd;
+  /* Borde gris claro */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+  padding: 15px;
+  /* Espaciado interno */
   margin-bottom: 15px;
+  /* Separación entre cajas */
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Animación */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  /* Eleva la caja ligeramente */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  /* Aumenta la sombra */
+}
+
+h3 {
+  margin-top: 0;
+  /* Quita margen superior */
+}
+
+.no-results {
+  color: #888;
+  font-style: italic;
+  text-align: center;
 }
