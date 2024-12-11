@@ -1,0 +1,30 @@
+.peliculas-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #dfd8d8;
+  border-radius: 7px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.peliculas-container h2 {
+  color: #333;
+  text-align: center;
+}
+
+.pelicula-item {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.pelicula-item strong {
+  color: #007bff;
+}
+
+.pelicula-item em {
+  color: #555;
+}

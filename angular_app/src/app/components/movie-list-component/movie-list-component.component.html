@@ -1,0 +1,15 @@
+<div class="movie-list">
+  <app-search-bar (searchTermChange)="onSearchTermChange($event)">
+  </app-search-bar>
+
+  <div *ngIf="filteredMovies.length > 0">
+    <div *ngFor="let movie of filteredMovies" class="movie-card">
+      <app-movie-item-component [movie]="movie" (movieSelected)="onMovieSelected($event)">
+      </app-movie-item-component>
+    </div>
+  </div>
+
+  <div *ngIf="filteredMovies.length === 0" class="no-results">
+    No se encontraron películas para "{{ searchTerm }}".
+  </div>
+</div>

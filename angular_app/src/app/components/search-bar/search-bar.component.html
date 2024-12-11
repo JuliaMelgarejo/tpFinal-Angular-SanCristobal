@@ -1,0 +1,6 @@
+<div class="search-bar">
+  <input type="text" placeholder="Buscar películas..." [(ngModel)]="searchTerm" class="search-input" />
+  <p *ngIf="searchTerm">Buscando: {{ searchTerm }}</p>
+  <button (click)="onSearchTermChange()" class="search-button">Buscar</button>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="movie-item">
+  <img *ngIf="movie.image" [src]="movie.image" alt="{{ movie.title }} poster">
+  <h4>{{ movie.title }}</h4>
+  <p><strong>Año:</strong> {{ movie.year }}</p>
+  <p *ngIf="movie.description"><strong>Descripción:</strong> {{ movie.description }}</p>
+  <button (click)="selectMovie()">Seleccionar</button>
+</div>

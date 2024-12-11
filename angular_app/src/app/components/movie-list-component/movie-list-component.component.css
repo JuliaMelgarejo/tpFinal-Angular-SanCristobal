@@ -1,0 +1,10 @@
+.movies-list {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.movie-card {
+  margin-bottom: 15px;
+}

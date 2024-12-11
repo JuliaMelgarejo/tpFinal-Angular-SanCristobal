@@ -1,0 +1,11 @@
+<div class="peliculas-container">
+  <h2>Lista de Películas</h2>
+  <ul>
+    <li *ngFor="let pelicula of movies" class="pelicula-item">
+      <strong>{{ pelicula.titulo }}</strong>
+      ({{ pelicula.anio }}) - {{ pelicula.genero }}<br>
+      <em>Dirigida por: {{ pelicula.director }}</em>
+    </li>
+  </ul>
+</div>
+
