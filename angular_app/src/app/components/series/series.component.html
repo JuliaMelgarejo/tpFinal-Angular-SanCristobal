@@ -1,0 +1,18 @@
+<div class="movies-list">
+    <div *ngIf="series.length > 0; else noResults">
+      <h2>{{titleSerie}}</h2>
+      <div *ngFor="let serie of series" class="movie-card">
+        <h3>{{ serie.Title }}</h3>
+        <p><strong>Fecha de estreno:</strong> {{ serie.Released | date:'longDate' }}</p>
+        <p><strong>Episodio:</strong> {{ serie.Episode }}</p>
+        <p><strong>Calificacion:</strong> {{ serie.imdbRating }}</p>
+        <a [href]="'https://www.imdb.com/title/' + serie.imdbID" target="_blank">Ver en IMDB</a>
+      </div>
+    </div>
+  
+    <ng-template #noResults>
+      <p class="no-results">No series found.</p>
+    </ng-template>
+  </div>
+  
+  

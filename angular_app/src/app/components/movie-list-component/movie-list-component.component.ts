@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Movie } from '../../models/movie.js';
 import { MovieItemComponentComponent } from '../movie-item-component/movie-item-component.component.js';
 import { SearchBarComponent } from "../search-bar/search-bar.component";
-import { MovieService } from '../../services/movie.service.js';
+import { MovieService } from '../../services/movie/movie.service.js';
 
 @Component({
   selector: 'app-movie-list-component',

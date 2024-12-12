@@ -1,0 +1,9 @@
+.centered-image {
+    display: block;           /* Hace que la imagen sea un bloque */
+    margin-left: auto;        /* Auto margen izquierdo */
+    margin-right: auto;       /* Auto margen derecho */
+    width: 500px;             /* Cambiar el ancho a 500px (ajusta el tamaño como prefieras) */
+    height: 500px;  
+    margin-bottom: 20px;          /* Establece una altura de 350px para que no esté tan larga */
+  }
+  
