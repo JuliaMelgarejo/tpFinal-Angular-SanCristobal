@@ -8,3 +8,44 @@
     .body {
       background-color: #f0d9d9;
     }
+
+  
+.button-container {
+  display: flex;               
+  justify-content: space-between; 
+  width: 30vw;                
+  height: 10vh;              
+  margin: 0;                 
+  padding: 0;                  
+  box-sizing: border-box;      
+}
+
+
+.btn {
+  flex: 1;                     
+  margin: 10px;               
+  font-size: 1rem;             
+  padding: 20px;               
+  background-color: #0f0f0f;  
+  color: white;                
+  border: none;                
+  border-radius: 8px;          
+  cursor: pointer;             
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  text-align: center;  
+}
+
+
+.btn:hover {
+  background-color: #686b68; 
+  transform: scale(1.05);      
+}
+
+
+.btn:focus {
+  outline: none;              
+  box-shadow: 0 0 10px rgba(188, 226, 188, 0.6);
+}

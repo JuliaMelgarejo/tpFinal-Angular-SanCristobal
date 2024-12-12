@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MessageComponent } from "./components/message/message.component";
-import { PersonComponent } from "./components/person/person.component";
-import { MoviesComponent } from './components/movies/movies.component.js';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
-import { MovieListComponentComponent } from "./components/movie-list-component/movie-list-component.component";
-import { SearchBarComponent } from "./components/search-bar/search-bar.component";
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './components/home/home.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, MovieListComponentComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, CommonModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  
   title = 'angular_app';
 }
